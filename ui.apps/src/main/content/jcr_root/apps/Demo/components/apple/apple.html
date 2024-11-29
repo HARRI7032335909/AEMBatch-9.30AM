@@ -1,0 +1,15 @@
+
+<div data-sly-use.phone="com.adobe.aem.guides.demo.core.models.DemoTest"></div>
+
+<div data-sly-test=${phone.phoneTitle}>${phone.phoneTitle}</div>        
+
+<div>${phone.phoneDescription}</div>
+
+<img src=${phone.phoneImage}>
+
+<div>${'dd-mm-yyyy' @format=phone.phoneDate}</div>
+
+<div>${phone.phoneNum}</div>
+
+<div>Gender:${(phone.textcheck) ? "Male" : "Female"}</div>
+
